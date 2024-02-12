@@ -2,32 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root{
+  --primary-blue:#D7EDFC;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+  scroll-behavior:smooth;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.ml-hide{
+  margin-left: -100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.primary-blue-bg{
+  background-color: var(--primary-blue);
+}
+
+.primary-blue-fill{
+  fill: #adddfd;
+}
+
+.primary-blue-color{
+  color: var(--primary-blue);
+}
+
+.primary-blue-bg-hover:hover{
+  background-color: #adddfd;
+}
+
+.nav-offcanvas{
+  position: absolute;
+  top: 0;
+}
+
+.hero-pic{
+ background: url('data:image/svg+xml,<svg width="511" height="377" viewBox="0 0 511 377" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M467.303 49.869C500.278 83.6222 499.316 135.321 504.146 186.668C508.942 238.283 519.884 289.591 492.689 319.243C465.459 349.163 400.092 357.426 335.043 366.001C270.348 374.621 206.679 383.642 147.998 368.064C89.6355 352.797 36.58 313.243 14.1364 267.53C-8.626 221.506 -0.811278 169.591 25.9334 129.572C52.3248 89.5078 97.5768 61.8731 146.765 39.8924C195.987 17.6446 248.792 1.006 308.81 0.746515C368.475 0.442235 434.681 16.1606 467.303 49.869Z" fill="#D7EDFC"/></svg>') 0 / auto 100%;
+}
+
+.carousel-container{
+  margin-top:30px;
+  background-color: rgb(215, 215, 215);
+  margin-bottom: 80px;
+  padding: 80px 0;
+}
+
+.h-150{
+  height: 150px;
 }
