@@ -21,7 +21,7 @@ export async function sendMail(data:any) {
 
     
     return await transporter.sendMail({
-        from: data.email,
+        from: process.env.NEXT_PUBLIC_SMTP_USER,
         to: process.env.NEXT_PUBLIC_SMTP_USER,
         subject: `Inquiry from ${data.name}`,
         html: `

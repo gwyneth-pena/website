@@ -1,7 +1,7 @@
 
 export default function Hero(){
     return <>
-        <div id="about" className="flex justify-between py-10 px-10 flex-col-reverse md:flex-row">
+        <div id="about" className="flex justify-between py-20 px-10 flex-col-reverse md:flex-row">
             <div className="w-full flex flex-col align-middle justify-start content-center md:w-50 md:px-10 md:py-10">
                 <h2 className="text-normal font-medium text-2xl md:text-7xl">Hello!</h2>
                 <p className="my-3 md:my-20">I am Gwyneth Christine M. Peña. Currently, I am a software engineer working on web and mobile applications using various tech stacks such as Angular, Python, and Ionic. Also, I had previous experience as a freelancer creating WordPress sites and providing other web-related solutions for my clients.</p>
