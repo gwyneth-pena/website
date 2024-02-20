@@ -20,7 +20,7 @@ export async function sendMail(data:any) {
       });
 
     
-    return await transporter.sendMail({
+    return transporter.sendMail({
         from: process.env.NEXT_PUBLIC_SMTP_USER,
         to: process.env.NEXT_PUBLIC_SMTP_USER,
         subject: `Inquiry from ${data.name}`,
