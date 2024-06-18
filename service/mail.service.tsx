@@ -10,6 +10,8 @@ export async function sendMail(data: any) {
     },
   };
 
+  console.log(smtpOptions, "SMTP, OpTIONS");
+
   const transporter = nodemailer.createTransport({
     ...smtpOptions,
   });
