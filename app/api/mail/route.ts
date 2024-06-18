@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
-    sendMail(await request.json()).then((response: any) => {
+    await sendMail(await request.json()).then((response: any) => {
       console.log(response);
     });
     return NextResponse.json({ message: "Success!", status: 200 });
