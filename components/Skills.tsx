@@ -33,7 +33,7 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <h2 className="text-normal font-medium text-2xl py-0 my-0 md:text-3xl">
-            Technologies that I'm familiar with
+            Technologies that I&apos;m familiar with
           </h2>
         </motion.div>
       </div>
